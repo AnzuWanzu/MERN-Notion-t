@@ -2,6 +2,7 @@ import express from "express";
 import {
   createNote,
   deleteNote,
+  updateNote,
   getAllNotes,
 } from "../controllers/notesController.js";
 
