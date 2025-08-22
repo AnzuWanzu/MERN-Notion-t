@@ -15,7 +15,6 @@ export const getNoteById = async (req, res) => {
   try {
     const note = await Note.findById(req.params.id);
     if (!note) return res.status(404).json({ message: "Note not found" });
-    res.json(note);
     res.status(200).json(note);
   } catch (error) {
     console.log("Error in getNoteById controller", error);
@@ -51,7 +50,8 @@ export const updateNote = async (req, res) => {
         new: true,
       }
     );
-    if (!updatedNote) return res.status(404).json(updatedNote);
+    if (!updatedNote)
+      return res.status(404).json({ message: "Note not updated" });
 
     res.status(200).json({ message: "Note updated successfully" });
   } catch (error) {
