@@ -5,7 +5,7 @@ import CreatePage from "./pages/CreatePage";
 
 const App = () => {
   return (
-    <div data-theme="forest">
+    <div data-theme="forest" style={{ backgroundColor: "#0d0c0c" }}>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/create" element={<CreatePage />} />
