@@ -19,20 +19,33 @@
 
 ---
 
-## Dev Notes
+## 📖 Dev Notes
 This is a **bootleg Notion clone** built with the **MERN stack** (MongoDB, Express, React, Node.js).  
-It’s also my **first MERN project deployed online**. There's no Authentication yet. That's going to be added soon. Apologies if the codebase is extremely scuffed.
-I also followed this excellent tutorial from freeCodeCamp, which was extremely helpful:
+It’s also my **first MERN project deployed online** 🚀.  
 
-[![Django Tutorial](https://img.youtube.com/vi/F9gB5b4jgOI/0.jpg)](https://www.youtube.com/watch?v=F9gB5b4jgOI&t=10653s)
+⚠️ There’s no Authentication yet (coming soon). Apologies if the codebase is a bit scuffed.  
 
+I also followed this excellent tutorial from freeCodeCamp, which was extremely helpful:  
+
+[![FreeCodeCamp MERN Tutorial](https://img.youtube.com/vi/F9gB5b4jgOI/0.jpg)](https://www.youtube.com/watch?v=F9gB5b4jgOI&t=10653s)
 
 ---
 
-## 🛠️ Run Locally
+## 🛠️ Tech Stack
+- **Frontend:** React + Vite + TailwindCSS + DaisyUI  
+- **Backend:** Node.js + Express.js  
+- **Database:** MongoDB (Mongoose ODM)  
+- **Other Tools:** Axios, React Router, React Hot Toast, Upstash (Rate Limiting), and ChatGPT
 
-Clone the project:
+---
+
+## 🚀 Run Locally
+
+Clone the repo:
 
 ```bash
 git clone https://github.com/your-username/notiont.git
 cd notiont
+npm install
+npm run build
+npm run start
