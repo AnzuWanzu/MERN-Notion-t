@@ -5,7 +5,7 @@ import CreatePage from "./pages/CreatePage";
 
 const App = () => {
   return (
-    <div data-theme="forest" style={{ backgroundColor: "#0d0c0c" }}>
+    <div data-theme="forest">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/create" element={<CreatePage />} />
@@ -16,3 +16,5 @@ const App = () => {
 };
 
 export default App;
+
+//style={{ backgroundColor: "#0d0c0c" }}
